@@ -3,5 +3,7 @@ layout: page
 title: "Первый курс"
 ---
 # Работы за первый курс
-* [ОКА](OKA.html)
-* [ИТвМ](ITM.html)
+* [ОКА](OKA.md)
+* [ИТвМ](ITM.md)
+* [Дискретная математика](discrete_maths.md)
+* [История](history.md)
