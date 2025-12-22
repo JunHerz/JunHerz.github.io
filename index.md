@@ -5,3 +5,4 @@
 * [Второй курс](/courses/2-course/)
 * [Третий курс](/courses/3-course/)
 * [Четвертый курс](/courses/4-course/)
+* [Практики](/courses/practices)
