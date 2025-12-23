@@ -10,4 +10,4 @@ cayman_theme:
   # Цвет верхнего заголовка
   header_color: "#d9d2e9" 
   # Изображение для шапки сайта
-  header_image: "assets/images/header-bg.jpg"
+  header_image: "assets/images/LogoPortfolio.jpg"
