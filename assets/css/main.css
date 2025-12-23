@@ -28,12 +28,12 @@ body {
 .site-header {
     background-color: #0a0a0a;
     border-bottom: 2px solid #c770ff;
-    padding: 1.5rem 0; /* Уменьшили padding */
-    text-align: center; /* Центрируем текст */
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
 .site-title {
-    font-size: 2rem; /* Уменьшили размер */
+    font-size: 2rem;
     margin-bottom: 0.25rem;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -51,14 +51,14 @@ body {
 
 .site-description {
     color: #aaaaaa;
-    font-size: 1rem; /* Уменьшили размер */
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     font-weight: 300;
 }
 
 .main-nav {
     display: flex;
-    justify-content: center; /* Центрируем навигацию */
+    justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
 }
@@ -98,7 +98,7 @@ body {
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -138,19 +138,25 @@ body {
     transform: translateX(5px);
 }
 
-/* ===== ПОДВАЛ ===== */
-.site-footer {
-    background-color: #0a0a0a;
-    border-top: 1px solid #222222;
-    padding: 1.5rem 0;
-    margin-top: auto;
-    text-align: center;
-    color: #666666;
-    font-size: 0.9rem;
+/* ===== ССЫЛКИ НА ПРЕДМЕТЫ В КОЛОНКАХ ===== */
+.subject-column a {
+    color: #c770ff;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    display: block;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
 }
-/* ===== ИСПРАВЛЕНИЕ ДЛЯ СТРАНИЦ КУРСОВ И ПРЕДМЕТОВ (ЧТОБЫ НЕ ПОПЛЫЛО) ===== */
 
-/* 1. Страницы курсов (например, /courses/1-course/) */
+.subject-column a:hover {
+    color: #ffffff;
+    background-color: rgba(199, 112, 255, 0.1);
+    border-bottom-color: #c770ff;
+    padding-left: 0.5rem;
+}
+
+/* ===== СТРАНИЦЫ КУРСОВ ===== */
+/* 1. Страницы курсов */
 body:not(.homepage) .main-content > ul {
     list-style: none !important;
     padding-left: 1.5rem !important;
@@ -162,7 +168,7 @@ body:not(.homepage) .main-content > ul li {
     position: relative !important;
 }
 
-/* 2. Фиолетовые ссылки на предметы (но только на страницах курсов) */
+/* 2. Ссылки на предметы на страницах курсов */
 body:not(.homepage) .main-content > ul a {
     color: #c770ff !important;
     text-decoration: none !important;
@@ -174,10 +180,12 @@ body:not(.homepage) .main-content > ul a {
 
 body:not(.homepage) .main-content > ul a:hover {
     color: #ffffff !important;
+    background-color: rgba(199, 112, 255, 0.1) !important;
     border-bottom-color: #c770ff !important;
+    padding-left: 0.5rem !important;
 }
 
-/* 3. Фиолетовые маркеры "▸" для списков предметов */
+/* 3. Маркеры для списков предметов */
 body:not(.homepage) .main-content > ul li::before {
     content: "▸" !important;
     color: #c770ff !important;
@@ -192,4 +200,34 @@ body:not(.homepage) .main-content > h1:first-of-type {
     border-bottom: 2px solid #333 !important;
     padding-bottom: 0.5rem !important;
     margin-bottom: 1.5rem !important;
+}
+
+/* ===== ССЫЛКИ НА 404 СТРАНИЦЕ ===== */
+.error-page a {
+    color: #c770ff !important;
+    text-decoration: none !important;
+    display: block !important;
+    margin: 0.5rem 0 !important;
+    padding: 0.5rem !important;
+    border: 1px solid #c770ff !important;
+    border-radius: 4px !important;
+    transition: all 0.2s !important;
+    background-color: transparent !important;
+}
+
+.error-page a:hover {
+    color: #ffffff !important;
+    background-color: rgba(199, 112, 255, 0.2) !important;
+    border-color: #ffffff !important;
+}
+
+/* ===== ПОДВАЛ ===== */
+.site-footer {
+    background-color: #0a0a0a;
+    border-top: 1px solid #222222;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    text-align: center;
+    color: #666666;
+    font-size: 0.9rem;
 }
