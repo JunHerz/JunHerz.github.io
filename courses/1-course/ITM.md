@@ -3,7 +3,7 @@ layout: default
 title: "Информационные технологии в математике"
 ---
 
-#Информационные технологии в математике
+# Информационные технологии в математике
 
 ## Лабораторные работы
 - [Тема 5](https://drive.google.com/drive/folders/1ys_Kx9onxe9HD5rJuUfRoqFzNUgizmOG?usp=drive_link)
