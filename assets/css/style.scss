@@ -3,34 +3,69 @@
 ---
 @import "{{ site.theme }}";
 
-/* === ОСНОВНЫЕ ИСПРАВЛЕНИЯ ДЛЯ ТЕМЫ HACKER === */
+/* === КАСТОМИЗАЦИЯ ТЕМЫ HACKER ПОД ФИОЛЕТОВУЮ ПАЛИТРУ === */
 
-/* 1. Глобальный фон и цвет текста для body */
+/* 1. Глобальный фон и цвет основного текста */
 body {
-    background-color: #0d1117 !important; /* Глубокий тёмно-серый/чёрный */
-    color: #c9d1d9 !important;
+    background-color: #0d1117 !important; /* Глубокий тёмный фон */
+    color: #c9d1d9 !important; /* Светло-серый текст */
 }
 
-/* 2. Область основного контента (наследует фон от body) */
-.main-content, .wrapper {
+/* 2. Область основного контента (прозрачный фон, чтобы видеть body) */
+.main-content, .wrapper, .container {
     background-color: transparent !important;
-    color: inherit !important; /* Наследует цвет текста от body */
+    color: inherit !important;
 }
 
-/* 3. Фиолетовый акцент для заголовков и ссылок */
+/* 3. ХАКЕРСКИЙ ФИОЛЕТОВЫЙ АКЦЕНТ для заголовков и ссылок */
 h1, h2, h3, h4, h5, h6,
 a, a:visited,
 .site-title,
-.btn {
-    color: #d9d2e9 !important;
-}
-a:hover {
-    color: #c9b6e9 !important; /* Чуть светлее при наведении */
+.btn,
+#downloads .btn {
+    color: #c770ff !important; /* Яркий неоновый фиолетовый */
 }
 
-/* 4. Стили для блоков кода (если они появятся) */
-pre, code, .highlight {
+/* Цвет ссылок и кнопок при наведении */
+a:hover,
+.btn:hover,
+#downloads .btn:hover {
+    color: #a855f7 !important; /* Более насыщенный фиолетовый */
+    text-decoration: underline !important;
+}
+
+/* 4. ИСПРАВЛЕНИЕ ЦВЕТА РАЗДЕЛИТЕЛЬНОЙ ЛИНИИ (HR) */
+/* Эта линия генерируется темой для отделения шапки от контента */
+hr, .hr, .site-header + .container hr {
+    border-color: #c770ff !important; /* Фиолетовая линия */
+    background-color: #c770ff !important;
+    height: 1px !important;
+    border-width: 0 !important;
+}
+
+/* 5. Дополнительные акценты для элементов темы Hacker */
+/* Цвет рамки у кнопки "View on GitHub" */
+.btn.btn-github {
+    border-color: #c770ff !important;
+}
+/* Цвет иконки внутри кнопки GitHub */
+.btn.btn-github .icon {
+    background-color: #c770ff !important;
+}
+
+/* 6. Стили для блоков кода (если они появятся) */
+pre, code, .highlight, .highlighter-rouge {
     background-color: #161b22 !important;
     color: #8b949e !important;
     border: 1px solid #30363d !important;
+}
+/* Акцентный цвет внутри блоков кода (например, ключевые слова) */
+.highlight .k, .highlight .kd { color: #c770ff !important; }
+
+/* 7. [ВАЖНО] Делаем разделительную линию в шапке видимой */
+/* Иногда тема скрывает стандартный <hr>, и линию нужно создать через псевдоэлемент */
+.site-header {
+    border-bottom: 1px solid #c770ff !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
 }
