@@ -11,3 +11,6 @@ plugins:
 hacker_theme:
   skin: dark
   accent_color: "#d9d2e9" # Фиолетовый оттенок
+# Подключение пользовательского файла стилей
+stylesheets:
+  - "/assets/css/style.css"
