@@ -1,6 +1,3 @@
-/* ===== ИМПОРТ ШРИФТА ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* ===== БАЗОВЫЕ СТИЛИ ===== */
 * {
     margin: 0;
@@ -9,36 +6,37 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: #000000; /* ЧЁРНЫЙ ФОН */
-    color: #e0e0e0; /* Светло-серый текст */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #000000;
+    color: #e0e0e0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
 }
 
-/* ===== ШАПКА ===== */
+/* ===== ШАПКА (УМЕНЬШЕННАЯ И ЦЕНТРИРОВАННАЯ) ===== */
 .site-header {
-    background-color: #0a0a0a; /* Тёмно-чёрный */
-    border-bottom: 3px solid #c770ff;
-    padding: 2.5rem 0;
-    box-shadow: 0 4px 20px rgba(199, 112, 255, 0.1);
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #c770ff;
+    padding: 1.5rem 0; /* Уменьшили padding */
+    text-align: center; /* Центрируем текст */
 }
 
 .site-title {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem; /* Уменьшили размер */
+    margin-bottom: 0.25rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.02em;
 }
 
 .site-title a {
@@ -53,25 +51,27 @@ body {
 
 .site-description {
     color: #aaaaaa;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1rem; /* Уменьшили размер */
+    margin-bottom: 1.5rem;
     font-weight: 300;
 }
 
 .main-nav {
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    justify-content: center; /* Центрируем навигацию */
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .nav-link {
     color: #cccccc;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    transition: all 0.25s;
-    border: 1.5px solid transparent;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    font-size: 0.95rem;
 }
 
 .nav-link:hover {
@@ -81,91 +81,70 @@ body {
 }
 
 .btn-github {
-    background: linear-gradient(135deg, #c770ff, #a855f7);
+    background-color: #c770ff;
     color: white !important;
-    margin-left: auto;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(199, 112, 255, 0.3);
 }
 
 .btn-github:hover {
-    background: linear-gradient(135deg, #a855f7, #8b3fd6);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(199, 112, 255, 0.4);
+    background-color: #a855f7;
 }
 
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+/* ===== ОСНОВНОЙ КОНТЕНТ С КОЛОНКАМИ ===== */
 .main-content {
     flex-grow: 1;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
-.main-content h1 {
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-column h3 {
     color: #c770ff;
-    font-size: 2.5rem;
-    margin: 2.5rem 0 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid #222222;
-    font-weight: 700;
-}
-
-.main-content h2 {
-    color: #cccccc;
-    font-size: 2rem;
-    margin: 2rem 0 1.25rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
     font-weight: 600;
+    border-left: 3px solid #c770ff;
+    padding-left: 0.75rem;
 }
 
-.main-content h3 {
-    color: #aaaaaa;
-    font-size: 1.5rem;
-    margin: 1.5rem 0 1rem;
-    font-weight: 500;
-}
-
-.main-content ul {
+.course-column ul {
     list-style: none;
-    margin: 1.5rem 0;
+    padding: 0;
 }
 
-.main-content li {
-    margin: 0.75rem 0;
-    padding-left: 1.5rem;
-    position: relative;
+.course-column li {
+    margin-bottom: 0.75rem;
 }
 
-.main-content li::before {
-    content: "▸";
-    color: #c770ff;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
-
-.main-content a {
-    color: #c770ff;
+.course-column a {
+    color: #e0e0e0;
     text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px solid transparent;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
     transition: all 0.2s;
+    border: 1px solid transparent;
 }
 
-.main-content a:hover {
-    color: #ffffff;
-    border-bottom-color: #c770ff;
+.course-column a:hover {
+    background-color: rgba(199, 112, 255, 0.1);
+    color: #c770ff;
+    border-color: #c770ff;
+    transform: translateX(5px);
 }
 
 /* ===== ПОДВАЛ ===== */
 .site-footer {
     background-color: #0a0a0a;
     border-top: 1px solid #222222;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     margin-top: auto;
     text-align: center;
     color: #666666;
-}
-
-.site-footer p {
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
+    font-size: 0.9rem;
 }
