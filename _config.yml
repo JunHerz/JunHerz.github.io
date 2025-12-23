@@ -2,4 +2,4 @@ title: "Моё Портфолио"
 description: "Веб-портфолио Филоненко Н.М."
 baseurl: "" 
 url: "https://JunHerz.github.io" 
-theme: minima 
+theme: minimal
