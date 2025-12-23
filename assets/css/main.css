@@ -232,16 +232,3 @@ body:not(.homepage) .main-content > h1:first-of-type {
     font-size: 0.9rem;
 }
 
-/* ===== СТИЛИ ДЛЯ 404 СТРАНИЦЫ (без шапки) ===== */
-body.error-404 .site-header,
-body.error-404 .site-footer {
-    display: none;
-}
-
-body.error-404 .main-content {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
