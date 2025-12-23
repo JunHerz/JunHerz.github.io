@@ -1,88 +1,49 @@
 ---
-# Этот Front Matter говорит Jekyll обработать файл
 ---
 @import "{{ site.theme }}";
 
-/* === КАСТОМИЗАЦИЯ ТЕМЫ HACKER ПОД ФИОЛЕТОВУЮ ПАЛИТРУ === */
-
-/* 1. Глобальный фон и цвет основного текста */
 body {
-    background-color: #0d1117 !important; /* Глубокий тёмный фон */
-    color: #c9d1d9 !important; /* Светло-серый текст */
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
 }
 
-/* 2. Область основного контента (прозрачный фон, чтобы видеть body) */
 .main-content, .wrapper, .container {
     background-color: transparent !important;
     color: inherit !important;
 }
 
-/* 3. ХАКЕРСКИЙ ФИОЛЕТОВЫЙ АКЦЕНТ для заголовков и ссылок */
 h1, h2, h3, h4, h5, h6,
 a, a:visited,
 .site-title,
-.btn,
-#downloads .btn {
-    color: #c770ff !important; /* Яркий неоновый фиолетовый */
+.btn, #downloads .btn,
+::marker, .gp, .gt {
+    color: #c770ff !important;
 }
 
-/* Цвет ссылок и кнопок при наведении */
-a:hover,
-.btn:hover,
-#downloads .btn:hover {
-    color: #a855f7 !important; /* Более насыщенный фиолетовый */
+a:hover, .btn:hover, #downloads .btn:hover {
+    color: #a855f7 !important;
     text-decoration: underline !important;
 }
 
-/* 4. ИСПРАВЛЕНИЕ ЦВЕТА РАЗДЕЛИТЕЛЬНОЙ ЛИНИИ (HR) */
-/* Эта линия генерируется темой для отделения шапки от контента */
-hr, .hr, .site-header + .container hr {
-    border-color: #c770ff !important; /* Фиолетовая линия */
-    background-color: #c770ff !important;
-    height: 1px !important;
-    border-width: 0 !important;
+.site-header, hr, .hr {
+    border-color: #c770ff !important;
+    border-bottom-width: 2px !important;
 }
 
-/* 5. Дополнительные акценты для элементов темы Hacker */
-/* Цвет рамки у кнопки "View on GitHub" */
 .btn.btn-github {
     border-color: #c770ff !important;
 }
-/* Цвет иконки внутри кнопки GitHub */
+
 .btn.btn-github .icon {
     background-color: #c770ff !important;
 }
 
-/* 6. Стили для блоков кода (если они появятся) */
 pre, code, .highlight, .highlighter-rouge {
     background-color: #161b22 !important;
     color: #8b949e !important;
     border: 1px solid #30363d !important;
 }
-/* Акцентный цвет внутри блоков кода (например, ключевые слова) */
-.highlight .k, .highlight .kd { color: #c770ff !important; }
 
-/* 7. [ВАЖНО] Делаем разделительную линию в шапке видимой */
-/* Иногда тема скрывает стандартный <hr>, и линию нужно создать через псевдоэлемент */
-.site-header {
-    border-bottom: 1px solid #c770ff !important;
-    padding-bottom: 1rem !important;
-    margin-bottom: 2rem !important;
-}
-/* Фиолетовые стрелки ">>" и разделители */
-.highlight .p::before, .highlight .p::after,
-.highlight .gp, .highlight .go,
-.highlight .gu, .highlight .gt,
-.highlight .gs, .highlight .sr,
-.site-header {
+.highlight .k, .highlight .kd {
     color: #c770ff !important;
-    border-color: #c770ff !important;
-}
-/* Конкретно для стрелок в основном контенте */
-.main-content [class*="language-"] .p::before {
-    color: #c770ff !important;
-}
-/* Разделительная линия под шапкой */
-.site-header {
-    border-bottom: 2px solid #c770ff !important;
 }
