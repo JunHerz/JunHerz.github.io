@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Информационные технологии в математике"
 ---
 
