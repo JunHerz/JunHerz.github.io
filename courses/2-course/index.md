@@ -2,13 +2,13 @@
 title: "Второй курс"
 subjects:
   - name: "Анализ данных и основы Data Science"
-    link: "analysis.md"
+    link: "/courses/2-course/analysis"
   - name: "Базы данных"
-    link: "bazydannih.md"
+    link: "/courses/2-course/bazydannih"
   - name: "Операционные системы"
-    link: "operative_systems.md"
+    link: "/courses/2-course/operative_systems"
   - name: "Программирование"
-    link: "prog3.md"
+    link: "/courses/2-course/prog3"
 ---
 
 # Второй курс
