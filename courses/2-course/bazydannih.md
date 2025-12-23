@@ -4,9 +4,6 @@ title: "Базы данных"
 ---
 
 ## Лабораторные работы
-- []()
-
-## Практические работы
-- []()
+- [Google Disk](https://drive.google.com/drive/folders/1cqgZT0tDLXoxyIeVCtiKoXA-0eRjTIEm?usp=drive_link)
 
 ---
