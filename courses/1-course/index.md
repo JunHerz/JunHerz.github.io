@@ -1,5 +1,11 @@
-# Первый курс
-* [ОКА](OKA.md)
-* [ИТ в математике](ITM.md)
-* [Дискретная математика](discrete_maths.md)
-* [История](history.md)
+---
+title: "Первый курс"
+subjects:
+  - name: "ОКА"
+    link: "OKA.md"
+  - name: "ИТ в математике"
+    link: "ITM.md"
+  - name: "Дискретная математика"
+    link: "discrete_maths.md"
+  - name: "История"
+    link: "history.md"
