@@ -1,0 +1,30 @@
+// Подключаем базовые стили темы Hacker
+@import "jekyll-theme-hacker";
+
+// Ваши переопределения начнутся ниже этой строки
+
+// 1. Исправляем белый фон. Меняем фон страницы и цвет текста в основном контенте.
+body {
+  background-color: #000000 !important; /* Чёрный фон */
+}
+
+.main-content {
+  color: #f5f5f5 !important; /* Светлый текст для контраста */
+  background-color: transparent !important; /* Убираем белый фон у контента */
+}
+
+// 2. Меняем цвет акцента (ссылки, заголовки) на ваш фиолетовый.
+a, a:hover, a:focus {
+  color: #d9d2e9 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #d9d2e9 !important;
+}
+
+// 3. Меняем фоны для блока с кодом, чтобы он тоже был в тёмной теме.
+pre, code {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #d9d2e9 !important;
+}
