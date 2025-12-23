@@ -148,3 +148,48 @@ body {
     color: #666666;
     font-size: 0.9rem;
 }
+/* ===== ИСПРАВЛЕНИЕ ДЛЯ СТРАНИЦ КУРСОВ И ПРЕДМЕТОВ (ЧТОБЫ НЕ ПОПЛЫЛО) ===== */
+
+/* 1. Страницы курсов (например, /courses/1-course/) */
+body:not(.homepage) .main-content > ul {
+    list-style: none !important;
+    padding-left: 1.5rem !important;
+    margin: 1.5rem 0 !important;
+}
+
+body:not(.homepage) .main-content > ul li {
+    margin-bottom: 0.8rem !important;
+    position: relative !important;
+}
+
+/* 2. Фиолетовые ссылки на предметы (но только на страницах курсов) */
+body:not(.homepage) .main-content > ul a {
+    color: #c770ff !important;
+    text-decoration: none !important;
+    padding: 0.25rem 0 !important;
+    display: inline-block !important;
+    border-bottom: 1px solid transparent !important;
+    transition: all 0.2s !important;
+}
+
+body:not(.homepage) .main-content > ul a:hover {
+    color: #ffffff !important;
+    border-bottom-color: #c770ff !important;
+}
+
+/* 3. Фиолетовые маркеры "▸" для списков предметов */
+body:not(.homepage) .main-content > ul li::before {
+    content: "▸" !important;
+    color: #c770ff !important;
+    position: absolute !important;
+    left: -1.2rem !important;
+    font-weight: bold !important;
+}
+
+/* 4. Заголовки на страницах курсов */
+body:not(.homepage) .main-content > h1:first-of-type {
+    color: #c770ff !important;
+    border-bottom: 2px solid #333 !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
