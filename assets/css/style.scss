@@ -69,3 +69,20 @@ pre, code, .highlight, .highlighter-rouge {
     padding-bottom: 1rem !important;
     margin-bottom: 2rem !important;
 }
+/* Фиолетовые стрелки ">>" и разделители */
+.highlight .p::before, .highlight .p::after,
+.highlight .gp, .highlight .go,
+.highlight .gu, .highlight .gt,
+.highlight .gs, .highlight .sr,
+.site-header {
+    color: #c770ff !important;
+    border-color: #c770ff !important;
+}
+/* Конкретно для стрелок в основном контенте */
+.main-content [class*="language-"] .p::before {
+    color: #c770ff !important;
+}
+/* Разделительная линия под шапкой */
+.site-header {
+    border-bottom: 2px solid #c770ff !important;
+}
