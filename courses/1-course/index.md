@@ -9,3 +9,7 @@ subjects:
     link: "discrete_maths.md"
   - name: "История"
     link: "history.md"
+---
+
+# Первый курс
+Здесь представлены дисциплины первого курса.
