@@ -1,11 +1,36 @@
 ---
 # Этот Front Matter говорит Jekyll обработать файл
 ---
-/* Ваши кастомные стили начнутся ЗДЕСЬ, после импорта темы */
 @import "{{ site.theme }}";
 
-/* ТЕСТ: Кардинально меняем цвет заголовков для проверки */
-h1, h2, h3, h4, h5, h6 {
-    color: #ff0000 !important; /* Ярко-красный! Если сработает, вы это увидите */
-    background-color: yellow !important; /* Жёлтый фон для наглядности */
+/* === ОСНОВНЫЕ ИСПРАВЛЕНИЯ ДЛЯ ТЕМЫ HACKER === */
+
+/* 1. Глобальный фон и цвет текста для body */
+body {
+    background-color: #0d1117 !important; /* Глубокий тёмно-серый/чёрный */
+    color: #c9d1d9 !important;
+}
+
+/* 2. Область основного контента (наследует фон от body) */
+.main-content, .wrapper {
+    background-color: transparent !important;
+    color: inherit !important; /* Наследует цвет текста от body */
+}
+
+/* 3. Фиолетовый акцент для заголовков и ссылок */
+h1, h2, h3, h4, h5, h6,
+a, a:visited,
+.site-title,
+.btn {
+    color: #d9d2e9 !important;
+}
+a:hover {
+    color: #c9b6e9 !important; /* Чуть светлее при наведении */
+}
+
+/* 4. Стили для блоков кода (если они появятся) */
+pre, code, .highlight {
+    background-color: #161b22 !important;
+    color: #8b949e !important;
+    border: 1px solid #30363d !important;
 }
