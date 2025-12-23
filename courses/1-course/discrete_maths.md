@@ -1,6 +1,9 @@
 ---
-layout: page
-title: "Дискретная математика для программистов"
+layout: default
+title: "Дискретная математика"
 ---
 
-### Выполненные работы
+## Лабораторные работы
+- [Google Disk](https://drive.google.com/drive/folders/1G42IsxZsj09I6AvApgEdChBxnvgO98OM?usp=drive_link)
+
+---
