@@ -22,6 +22,10 @@
 
     <main class="container main-content">
         {{ content }}
+        
+        {%- if page.subjects -%}
+            {%- include subjects_columns.html subjects=page.subjects -%}
+        {%- endif -%}
     </main>
 
     <footer class="site-footer">
