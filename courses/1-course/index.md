@@ -2,13 +2,13 @@
 title: "Первый курс"
 subjects:
   - name: "ОКА"
-    link: "OKA.md"
+    link: "/courses/1-course/OKA"
   - name: "ИТ в математике"
-    link: "ITM.md"
+    link: "/courses/1-course/ITM"
   - name: "Дискретная математика"
-    link: "discrete_maths.md"
+    link: "/courses/1-course/discrete_maths"
   - name: "История"
-    link: "history.md"
+    link: "/courses/1-course/history"
 ---
 
 # Первый курс
