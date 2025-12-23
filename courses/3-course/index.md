@@ -2,7 +2,7 @@
 title: "Третий курс"
 subjects:
   - name: "Прикладные информационные технологии"
-    link: "PIT.md"
+    link: "/courses/3-course/PIT"
   - name: "Техника и технологии визуализации данных"
     link: "TITVD.md"
   - name: "Бизнес-информатика"
