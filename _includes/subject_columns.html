@@ -1,32 +1,26 @@
-{%- comment -%}
-  Разбивает массив предметов на колонки (по 4 предмета в колонке)
-{%- endcomment -%}
+{%- comment -%}Разбивает массив предметов на колонки (по 4 предмета в колонке){%- endcomment -%}
 
 {%- assign columns_count = 4 -%}
 {%- assign total_items = include.subjects.size -%}
-{%- assign items_per_column = columns_count -%}
-{%- assign columns_needed = total_items | divided_by: items_per_column | ceil -%}
+{%- assign columns_needed = total_items | divided_by: columns_count | ceil -%}
 
 <div class="subjects-grid" style="display: grid; grid-template-columns: repeat({{ columns_needed }}, 1fr); gap: 2rem; margin-top: 2rem;">
   
-  {%- for column_index in (0..columns_needed) -%}
-    {%- assign start_index = column_index | times: items_per_column -%}
-    {%- assign end_index = start_index | plus: items_per_column | minus: 1 -%}
+  {%- for column_index in (0...columns_needed) -%}
+    {%- assign start_index = column_index | times: columns_count -%}
     
-    {%- if start_index <= end_index -%}
-      <div class="subject-column">
-        <ul style="list-style: none; padding: 0;">
-          {%- for subject in include.subjects offset: start_index limit: items_per_column -%}
-            <li style="margin-bottom: 0.8rem;">
-              <a href="{{ subject.link | relative_url }}" 
-                 style="color: #c770ff; text-decoration: none; padding: 0.25rem 0; display: block; border-bottom: 1px solid transparent; transition: all 0.2s;">
-                ▸ {{ subject.name }}
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </div>
-    {%- endif -%}
+    <div class="subject-column">
+      <ul style="list-style: none; padding: 0;">
+        {%- for subject in include.subjects offset: start_index limit: columns_count -%}
+          <li style="margin-bottom: 0.8rem;">
+            <a href="{{ subject.link | relative_url }}" 
+               style="color: #c770ff; text-decoration: none; padding: 0.25rem 0; display: block; border-bottom: 1px solid transparent; transition: all 0.2s;">
+              ▸ {{ subject.name }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
     
   {%- endfor -%}
   
