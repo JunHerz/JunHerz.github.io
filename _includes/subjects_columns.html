@@ -6,7 +6,7 @@
 
 <div class="subjects-grid" style="display: grid; grid-template-columns: repeat({{ columns_needed }}, 1fr); gap: 2rem; margin-top: 2rem;">
   
-  {%- for column_index in (0...columns_needed) -%}
+  {%- for column_index in (0..columns_needed) -%}
     {%- assign start_index = column_index | times: columns_count -%}
     
     <div class="subject-column">
