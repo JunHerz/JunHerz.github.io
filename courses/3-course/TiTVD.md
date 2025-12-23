@@ -4,9 +4,6 @@ title: "Техника и технологии визуализации данн
 ---
 
 ## Лабораторные работы
-- []()
-
-## Практические работы
-- []()
+- [Google Disk](https://drive.google.com/drive/folders/1qX9JyLMUAk7cwzuTeXJuAmpETHHUbCOh?usp=drive_link)
 
 ---
