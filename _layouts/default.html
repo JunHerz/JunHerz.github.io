@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% seo %}
-    <!-- [КЛЮЧЕВОЕ] Подключаем скомпилированный CSS из assets/css/style.scss -->
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-    <!-- Подключаем встроенные стили темы Hacker (опционально, можно удалить) -->
-    <link rel="stylesheet" href="{{ "/assets/css/theme.css" | relative_url }}">
+    {% seo %} <!-- 1. Плагин для SEO. ОДИН РАЗ. Он может подключать стили темы. -->
+
+    <!-- 2. ПОДКЛЮЧАЕМ НАШ КАСТОМНЫЙ CSS (главный файл стилей) -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- 3. Дополнительные метатеги от темы Hacker -->
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
     <header>
