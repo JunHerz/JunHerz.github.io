@@ -4,10 +4,7 @@ baseurl: ""
 url: "https://JunHerz.github.io" 
 theme: jekyll-theme-cayman
 # Дополнительные настройки для темы Cayman
-cayman_theme:
-  # Цветовая схема
-  color_theme: dark
-  # Цвет верхнего заголовка
-  header_color: "#d9d2e9" 
-  # Изображение для шапки сайта
-  header_image: "assets/images/LogoPortfolio.jpg"
+dinky_theme:
+  skin: dark
+  accent_color: "#d9d2e9"
+# header_image: "assets/images/LogoPortfolio.jpg"
