@@ -3,13 +3,13 @@ layout: default
 title: "Учебные практики"
 ---
 
-## Практика 1 Курс
-- []()
+## Учебная (эксплуатационная)
+- [Github-репозиторий](https://github.com/JunHerz/HerzenUniversity)
 
-## Практика 2 курс
-- []()
+## Учебная технологическая (проектно-технологическая)
+- [Google Disk](https://drive.google.com/drive/folders/1r9zqD934sdE3Y8Wg3udQvZ7TFDPoJyaf?usp=drive_link)
 
-## Практика 3 курс
+## Производственная технологическая (проектно-технологическая)
 - [Git-репозиторий](https://git.herzen.spb.ru/1140155/practice-3-course)
 
 ---
