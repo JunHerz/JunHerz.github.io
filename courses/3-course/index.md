@@ -21,8 +21,12 @@ subjects:
     link: "/courses/3-course/okeo"
   - name: "Основы машинного обучения"
     link: "/courses/3-course/omo"
+  - name: "Программирование"
+    link: "/courses/3-course/prog6"
   - name: "Сети и телекоммуникации"
     link: "/courses/3-course/seti_telekom"
+
+
 ---
 
 # Третий курс
