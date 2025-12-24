@@ -24,7 +24,7 @@ body {
     padding: 0 20px;
 }
 
-/* ===== ШАПКА (УМЕНЬШЕННАЯ И ЦЕНТРИРОВАННАЯ) ===== */
+/* ===== ШАПКА (меньше по центру) ===== */
 .site-header {
     background-color: #0a0a0a;
     border-bottom: 2px solid #c770ff;
