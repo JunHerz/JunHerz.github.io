@@ -12,4 +12,7 @@ title: "Учебные практики"
 ## Производственная технологическая (проектно-технологическая)
 - [Git-репозиторий](https://git.herzen.spb.ru/1140155/practice-3-course)
 
+## Производственная (научно-исследовательская работа)
+- [Google Disk](https://drive.google.com/drive/folders/1QqBaRMU6YJa_hJ8xaWzpnUG2hyRfL7Vm?usp=sharing)
+
 ---
