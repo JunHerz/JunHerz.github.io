@@ -11,6 +11,8 @@ subjects:
     link: "/courses/4-course/SiPVIIiT"
   - name: "Языки написания спецификаций"
     link: "/courses/4-course/YaNS"
+
+    
 ---
 
 # Четвертый курс
