@@ -15,4 +15,7 @@ title: "Учебные практики"
 ## Производственная (научно-исследовательская работа)
 - [Google Disk](https://drive.google.com/drive/folders/1QqBaRMU6YJa_hJ8xaWzpnUG2hyRfL7Vm?usp=sharing)
 
+## Производственная (преддипломная)
+- [Git-репозиторий](https://git.herzen.spb.ru/1140155/practice-4-course)
+
 ---
