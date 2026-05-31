@@ -1,8 +1,8 @@
 ---
 title: "Четвертый курс"
 subjects:
-  - name: "Ошибка (проверь меня)"
-    link: "/courses/4-course/error"
+  - name: "IT-рекрутмент"
+    link: "/courses/4-course/IT-recrutement"
 
 ---
 
